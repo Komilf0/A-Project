@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Recipe book</title>
+</head>
+<body>
+
+        <div class="header">
+            <h4>Let's find some new recipies!</h4>
+            <p>Describe your dish.</p>
+            <form action="#" id="search-form">
+                <label for="search">Name of the dish:</label>
+                <input type="text" class="search-input" id="search" placeholder="Eg. Chinese">
+                <input type="hidden" id="type" value="area">
+                <button type="submit" class="search-button button">Search</button>
+            </form>
+        </div>
+        <div class="results-wrapper">
+            <h1 class="text-center">Results:<span id="total"></span></h1>
+            <div id="results"></div>
+    </div>
+
+    <div class="navbar">
+        <a class="brand" href="index.html">
+            <h1 class="sitename">Recipe<span> library</span></h1>
+        </a>
+        <div class="navbar-nav">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Dish Name</a>
+                <a class="nav-link" href="ingredients.html">Ingredient</a>
+                <a class="nav-link" href="area.html">Area</a>
+                <a class="nav-link" href="category.html">Category</a>  
+            </div>
+        </div>
+        <div navbutton>
+            <a href="favorites.html" class="myFavourite-button button">My Favorites</a>
+        </div>
+        <hr class="hr1">
+    </div>
+
+    <script src="js/MealsAPI.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/MealDB.js"></script>
+</body>
+</html>
